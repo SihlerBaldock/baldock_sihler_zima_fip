@@ -6,6 +6,9 @@
     <title>ZIMA</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head> 
 <body>
     <header id="header">
@@ -28,9 +31,20 @@
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
-
-
     </header>
+
+    <section id="hero-home" class="grid-con center-grid-con">
+        <img
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            srcset="
+            images/zima-hero382.png 382w,
+            images/zima-hero608.png 608w,
+            images/zima-hero970.png 970w"
+            src="images/zima-background.png"
+            alt="ZIMA Skinny Cans"
+            class="col-start-1 col-end-5 m-col-start-2 m-col-end-12">
+    </section>
+
     
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
