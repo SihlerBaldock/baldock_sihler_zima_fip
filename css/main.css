@@ -13,10 +13,14 @@
 }
 
 #logo-header {
-    padding: 10px;  
+    padding: 10px; 
 }
 
-/* Hambuger Menu */
+#nav-header {
+    margin-left: 40px;
+}
+
+/* Hambuger Menu Styles */
 
 .visuallyHidden {
     position: absolute; 
@@ -110,7 +114,7 @@
     font-size: 18px;
 }
 
-/* Hero Section */
+/* Hero Section Styles */
 
 #hero-home img {
     width: 100%;
@@ -119,7 +123,7 @@
     padding-top: 15px;
 }
 
-/* Video Section */
+/* Video Section Styles */
 
 #home-video {
     position: relative;
@@ -150,16 +154,44 @@
     max-width: 200px;
     margin-top: 20px;
     padding-top: 20px;
-
 }
 
+/* Footer Styles */
+
+#footer-main {
+    background-color: black;
+    height: 300px;
+}
+
+#logo-footer {
+    padding-top: 30px;
+    padding-left: 20px;
+    height: 110px;
+}
+
+#nav-footer li {
+    padding-top: 20px;
+    font-family: Jura;
+    font-size: 18px;
+}
+
+#nav-footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Custom Media Queries */
+
+@media screen and (min-width: px) {
+
+}
 
 /* Tablet Media Queries */
 
 @media screen and (min-width: 768px) {
 
     #header {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .hamburger {
@@ -181,8 +213,23 @@
         font-size: 22px;
     }
 
-    nav {
+    #nav-header {
         margin-left: 40px;
+    }
+
+    #logo-footer {
+        height: 130px;
+    }
+
+    #footer-main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #nav-footer ul {
+        display: flex;
+        gap: 30px;
     }
 
 }
@@ -190,11 +237,5 @@
 /* Desktop Media Queries */
 
 @media screen and (min-width: 1200px) {
-
-}
-
-/* Custom Media Queries */
-
-@media screen and (min-width: px) {
 
 }
