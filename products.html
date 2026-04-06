@@ -48,7 +48,7 @@
     <section id="product-display">
         <h2>Our Products</h2>
         
-        <div id="product1" class="grid-con center-grid-con">
+        <div id="product1" data-product="orange" class="product grid-con center-grid-con">
             <img
                 sizes="(max-width: 560px) 100vw, 569px"
                 srcset="
@@ -56,14 +56,17 @@
                 images/zima-bottle-orange358.png 358w"
                 src="images/zima-bottle-orange569.png"
                 alt="ZIMA Orange Bottle"
-                class="col-start-2 col-end-4 m-col-start-4 m-col-end-10 l-col-start-2 l-col-end-8"
+                class="col-start-2 col-end-4 m-col-start-4 m-col-end-10 l-col-start-1 l-col-end-7"
                 id="zima-bottle-orange">  
                 
-            <button id="view-ingredients" class="products-buttons col-start-2 col-end-4 m-col-start-4 m-col-end-9">View Ingredients</button>
+            <button id="view-ingredients" data-type="ingredients" class="products-buttons col-start-2 col-end-4 m-col-start-4 m-col-end-10 l-col-start-8 l-col-end-12">View Ingredients</button>
+            <div class="output col-span-full l-col-start-8 l-col-end-12"></div>
 
-            <button id="sizes" class="products-buttons col-start-2 col-end-4 m-col-start-4 m-col-end-9">View Sizes Available</button>
+            <button id="sizes" data-type="sizes" class="products-buttons col-start-2 col-end-4 m-col-start-4 m-col-end-10 l-col-start-8 l-col-end-12">View Sizes Available</button>
+            <div class="output col-span-full l-col-start-8 l-col-end-12"></div>
 
-            <button id="allergen-info" class="products-buttons col-start-2 col-end-4 m-col-start-4 m-col-end-9">View Allgergen Information</button>
+            <button id="flavour-info" data-type="info" class="products-buttons col-start-2 col-end-4 m-col-start-4 m-col-end-10 l-col-start-8 l-col-end-12">View Flavour Information</button>
+            <div class="output col-span-full l-col-start-8 l-col-end-12"></div>
         </div>
 
 
