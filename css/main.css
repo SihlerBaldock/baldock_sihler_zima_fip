@@ -120,7 +120,6 @@
     width: 100%;
     height: auto;
     display: block;
-    padding-top: 15px;
 }
 
 /* Video Section Styles */
@@ -154,6 +153,44 @@
     max-width: 200px;
     margin-top: 20px;
     padding-top: 20px;
+}
+
+/* Products Page Styles */ 
+
+#product-display h2 {
+    text-align: center;
+    font-family: Jura;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#product1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#zima-bottle-orange {
+    border: black solid 2px;
+    border-radius: 15px;
+}
+
+.products-buttons {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: Jura;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.products-buttons:hover {
+    background-color: white;
+    color: black;
+    border: solid black 2px;
 }
 
 /* Footer Styles */
@@ -230,6 +267,10 @@
     #nav-footer ul {
         display: flex;
         gap: 30px;
+    }
+
+    #product-display h2 {
+        font-size: 24px;
     }
 
 }
