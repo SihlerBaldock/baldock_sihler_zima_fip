@@ -292,9 +292,7 @@
 /* Desktop Media Queries */
 
 @media screen and (min-width: 1200px) {
-    .products-buttons {
-        height: 40px;
-    }
+    
     
 
 }
