@@ -193,6 +193,20 @@
     border: solid black 2px;
 }
 
+.output {
+    font-family: Sora;
+    font-size: 14px;
+    padding-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.output.active {
+    max-height: 500px;
+    padding-top: 10px;
+}
+
 /* Footer Styles */
 
 #footer-main {
@@ -278,5 +292,9 @@
 /* Desktop Media Queries */
 
 @media screen and (min-width: 1200px) {
+    .products-buttons {
+        height: 40px;
+    }
+    
 
 }
