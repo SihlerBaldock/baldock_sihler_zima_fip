@@ -28,37 +28,37 @@ const productData = {
         sizes: "Small Can (355ml), Skinny Can (355ml), Glass Bottle (355ml), King Can (473ml)",
         info: "Exotic, vibrant, and refreshingly unexpected, ZIMA's Delicious Dragonfruit Soda is a limited-time flavor that brings a bold twist to your citrus lineup. Each sip delivers a subtle yet refreshing burst of dragonfruit, paired with smooth carbonation for a light, juicy finish. Bright in both color and character, this exclusive release adds a splash of tropical excitement to any moment—get it while it lasts."
     }
-}
+};
 
 const infoButtons = document.querySelectorAll(".products-buttons");
 
-//Functions
+//Functions 
 
-const showInfo = (button) => {
-    const productDiv = button.closest(".product");
-    const productName = productDiv.dataset.product;
-    const infoType = button.dataset.type;
-    const outputDiv = button.nextElementSibling;
+function showInfo (e) {
 
-    const newText = productData[productName][infoType];
+    const element = e.currentTarget;
 
-    if (outputDiv.classList.contains("active")) {
-        outputDiv.classList.remove("active");
-        outputDiv.textContent = "";
-    } else {
-        productDiv.querySelectorAll(".output").forEach(div => {
-            div.classList.remove("active");
-            div.textContent = "";
-        });
-        outputDiv.textContent = newText;
-        outputDiv.classList.add("active");
+    const existing = element.querySelector("p");
+    
+    if (existing) {
+        existing.remove();
+        return;
     }
-}; 
+
+    const product = element.dataset.product;
+    const type = element.dataset.type;
+
+    const info = document.createElement("p");
+    info.classList.add("info-text");
+    
+    info.textContent = productData[product][type];
+
+    element.appendChild(info); 
+}
+
 
 //Event Listeners
 
 infoButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-        showInfo(button);
-    });
+    button.addEventListener("click", showInfo);
 });
