@@ -116,10 +116,10 @@
 
 /* Hero Section Styles */
 
-#hero-home img {
-    width: 100%;
-    height: auto;
+#zima-scene-red {
+    max-width: 1200px;
     display: block;
+    margin: 0 auto;
 }
 
 /* Video Section Styles */
@@ -193,20 +193,6 @@
     border: solid black 2px;
 }
 
-.output {
-    font-family: Sora;
-    font-size: 14px;
-    padding-top: 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.output.active {
-    max-height: 500px;
-    padding-top: 10px;
-}
-
 #product2 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -245,6 +231,7 @@
 #zima-bottle-pink {
     border: black solid 2px;
     border-radius: 15px;
+    width: 100%;
 }
 
 /* Footer Styles */
