@@ -207,6 +207,46 @@
     padding-top: 10px;
 }
 
+#product2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#zima-bottle-yellow {
+    border: black solid 2px;
+    border-radius: 15px;
+}
+
+#product3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#zima-bottle-green {
+    border: black solid 2px;
+    border-radius: 15px;
+}
+
+#product4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#zima-bottle-red {
+    border: black solid 2px;
+    border-radius: 15px;
+}
+
+#product5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#zima-bottle-pink {
+    border: black solid 2px;
+    border-radius: 15px;
+}
+
 /* Footer Styles */
 
 #footer-main {
