@@ -172,7 +172,17 @@
 }
 
 #zima-bottle-orange {
-    border: black solid 2px;
+    border: #FB8400 solid 2px;
+    border-radius: 15px;
+}
+
+#zima-bottle-orange:hover {
+    background-color: #FDCE99;
+    
+}
+
+#zima-can-skinny-orange {
+    border: #FB8400 solid 2px;
     border-radius: 15px;
 }
 
@@ -181,16 +191,23 @@
     padding: 10px;
     font-family: Jura;
     color: white;
-    background-color: black;
     border: none;
     border-radius: 10px;
     font-size: 16px;
 }
 
-.products-buttons:hover {
+#orange-button {
+    background-color: #FB8400;
+}
+
+#orange-button:hover {
+    color: #FB8400;
     background-color: white;
-    color: black;
-    border: solid black 2px;
+    border: #FB8400 solid 2px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .5s ease-in;
+    cursor: pointer;
 }
 
 #product2 {
@@ -199,8 +216,27 @@
 }
 
 #zima-bottle-yellow {
-    border: black solid 2px;
+    border: #F9ED24 solid 2px;
     border-radius: 15px;
+}
+
+#zima-can-skinny-yellow {
+    border: #F9ED24 solid 2px;
+    border-radius: 15px;
+}
+
+#yellow-button {
+    background-color: #F9ED24;
+}
+
+#yellow-button:hover {
+    color: #F9ED24;
+    background-color: white;
+    border: #F9ED24 solid 2px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .5s ease-in;
+    cursor: pointer;
 }
 
 #product3 {
@@ -209,8 +245,27 @@
 }
 
 #zima-bottle-green {
-    border: black solid 2px;
+    border: #3AD730 solid 2px;
     border-radius: 15px;
+}
+
+#zima-can-skinny-green {
+    border: #3AD730 solid 2px;
+    border-radius: 15px;
+}
+
+#green-button {
+    background-color: #3AD730;
+}
+
+#green-button:hover {
+    color: #3AD730;
+    background-color: white;
+    border: #3AD730 solid 2px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .5s ease-in;
+    cursor: pointer;
 }
 
 #product4 {
@@ -219,8 +274,27 @@
 }
 
 #zima-bottle-red {
-    border: black solid 2px;
+    border: #DC3926 solid 2px;
     border-radius: 15px;
+}
+
+#zima-can-skinny-red {
+    border: #DC3926 solid 2px;
+    border-radius: 15px;
+}
+
+#red-button {
+    background-color: #DC3926;
+}
+
+#red-button:hover {
+    color: #DC3926;
+    background-color: white;
+    border: #DC3926 solid 2px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .5s ease-in;
+    cursor: pointer;
 }
 
 #product5 {
@@ -229,9 +303,29 @@
 }
 
 #zima-bottle-pink {
-    border: black solid 2px;
+    border: #EF4D89 solid 2px;
     border-radius: 15px;
     width: 100%;
+}
+
+#zima-can-skinny-pink {
+    border: #EF4D89 solid 2px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+#pink-button {
+    background-color: #EF4D89;
+}
+
+#pink-button:hover {
+    color: #EF4D89;
+    background-color: white;
+    border: #EF4D89 solid 2px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .5s ease-in;
+    cursor: pointer;
 }
 
 /* Footer Styles */
