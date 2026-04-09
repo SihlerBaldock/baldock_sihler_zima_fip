@@ -328,6 +328,85 @@
     cursor: pointer;
 }
 
+/* About Us Page Styles */
+
+#hero-bottles {
+    display: block;
+    margin: 0 auto;
+    
+}
+
+#were-back h2 {
+    border-bottom: solid black 2px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-family: Jura;
+    font-size: 20px;
+    text-align: center;
+}
+
+#were-back p {
+    font-family: Sora;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#questions h2 {
+    border-bottom: solid black 2px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-family: Jura;
+    font-size: 20px;
+    text-align: center;
+}
+
+#questions p {
+    font-family: Sora;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#btn-wereback {
+    font-family: Jura;
+    font-size: 18px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#btn-wereback:hover {
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+}
+
+#btn-contact {
+    font-family: Jura;
+    font-size: 18px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#btn-contact:hover {
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+}
+
 /* Footer Styles */
 
 #footer-main {
