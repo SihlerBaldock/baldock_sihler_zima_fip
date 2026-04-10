@@ -35,6 +35,8 @@ const infoButtons = document.querySelectorAll(".products-buttons");
 const contactBtn = document.querySelector("#btn-contact");
 const contactForm = document.querySelector("#contact-form");
 
+
+
 //Functions 
 
 function showInfo (e) {
