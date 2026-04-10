@@ -16,10 +16,6 @@
     padding: 10px; 
 }
 
-#nav-header {
-    margin-left: 40px;
-}
-
 /* Hambuger Menu Styles */
 
 .visuallyHidden {
@@ -85,7 +81,7 @@
 
 .nav-links {
     position: absolute;
-    top: 80px;
+    top: 84px;
     right: 0px;
     background: black;
     width: 200px;
@@ -104,7 +100,7 @@
 
 .nav-links li {
     list-style: none;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .nav-links a {
@@ -112,7 +108,10 @@
     text-decoration: none;
     font-family: Jura;
     font-size: 18px;
+    white-space: nowrap;
 }
+
+
 
 /* Hero Section Styles */
 
@@ -169,7 +168,10 @@
 #product1 {
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow: hidden;
 }
+
+
 
 #zima-bottle-orange {
     border: #FB8400 solid 2px;
@@ -373,7 +375,7 @@
     color: white;
     border: none;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
@@ -394,17 +396,58 @@
     color: white;
     border: none;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #btn-contact:hover {
     border: solid black 2px;
     background-color: white;
     color: black;
+}
+
+.hidden-form {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.hidden-form.open {
+    max-height: 500px;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Sora;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#contact-form button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Sora;
+    margin-bottom: 20px;
+}
+
+#contact-form button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 /* Footer Styles */

@@ -32,6 +32,9 @@ const productData = {
 
 const infoButtons = document.querySelectorAll(".products-buttons");
 
+const contactBtn = document.querySelector("#btn-contact");
+const contactForm = document.querySelector("#contact-form");
+
 //Functions 
 
 function showInfo (e) {
@@ -56,9 +59,21 @@ function showInfo (e) {
     element.appendChild(info); 
 }
 
+function toggleForm(e) {
+    e.preventDefault();
+
+    if (contactForm.classList.contains("open")) {
+        contactForm.classList.remove("open");
+    } else {
+        contactForm.classList.add("open")
+    }
+}
+
 
 //Event Listeners
 
 infoButtons.forEach((button) => {
     button.addEventListener("click", showInfo);
 });
+
+contactBtn.addEventListener("click", toggleForm);
