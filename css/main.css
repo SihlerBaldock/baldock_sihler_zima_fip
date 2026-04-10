@@ -154,13 +154,52 @@
 
 .card-front {
     background-color: white;
-    border: 1px solid #e5e7eb;
+}
+
+#card-front-orange {
+    border: 2px solid #FB8400;
 }
 
 .card-back {
-    background: #8b5cf6;
     color: white;
     transform: rotateY(180deg);
+    font-family: Jura;
+}
+
+#card-back-orange {
+    background-color: #FB8400;
+}
+
+#card-front-lemon {
+    border: 2px solid #F9ED24;
+}
+
+#card-back-lemon {
+    background-color: #F9ED24;
+}
+
+#card-front-lime {
+    border: 2px solid #3AD730;
+}
+
+#card-back-lime {
+    background-color: #3AD730;
+}
+
+#card-front-grapefruit {
+    border: 2px solid #DC3926;
+}
+
+#card-back-grapefruit {
+    background-color: #DC3926;
+}
+
+#card-front-dragonfruit {
+    border: 2px solid #EF4D89;
+}
+
+#card-back-dragonfruit {
+    background-color: #EF4D89;
 }
 
 /* Video Section Styles */
@@ -198,6 +237,12 @@
 
 /* Products Page Styles */ 
 
+#hero-home {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
 #product-display h2 {
     text-align: center;
     font-family: Jura;
@@ -210,11 +255,11 @@
 #product1 {
     padding-top: 10px;
     padding-bottom: 20px;
+    background-color: #FB8400;
 }
 
 #product1 h2 {
-    background-color: #FB8400;
-    color: black;
+    color: white;
 }
 
 .zima-img {
@@ -230,16 +275,16 @@
     padding: 10px;
     font-family: Jura;
     color: white;
-    border: none;
+    border: solid white 2px;
     border-radius: 10px;
     font-size: 16px;
 }
 
-#orange-button {
+.orange-button {
     background-color: #FB8400;
 }
 
-#orange-button:hover {
+.orange-button:hover {
     color: #FB8400;
     background-color: white;
     border: #FB8400 solid 2px;
@@ -252,18 +297,18 @@
 #product2 {
     padding-top: 10px;
     padding-bottom: 20px;
+    background-color: #F9ED24;
 }
 
 #product2 h2 {
-    background-color: #F9ED24;
-    color: black;
+    color: white;
 }
 
-#yellow-button {
+.yellow-button {
     background-color: #F9ED24;
 }
 
-#yellow-button:hover {
+.yellow-button:hover {
     color: #F9ED24;
     background-color: white;
     border: #F9ED24 solid 2px;
@@ -276,18 +321,18 @@
 #product3 {
     padding-top: 10px;
     padding-bottom: 20px;
+    background-color: #3AD730;
 }
 
 #product3 h2 {
-    background-color: #3AD730;
-    color: black;
+    color: white;
 }
 
-#green-button {
+.green-button {
     background-color: #3AD730;
 }
 
-#green-button:hover {
+.green-button:hover {
     color: #3AD730;
     background-color: white;
     border: #3AD730 solid 2px;
@@ -300,18 +345,18 @@
 #product4 {
     padding-top: 10px;
     padding-bottom: 20px;
+    background-color: #DC3926;
 }
 
 #product4 h2 {
-    background-color: #DC3926;
-    color: black;
+    color: white;
 }
 
-#red-button {
+.red-button {
     background-color: #DC3926;
 }
 
-#red-button:hover {
+.red-button:hover {
     color: #DC3926;
     background-color: white;
     border: #DC3926 solid 2px;
@@ -324,22 +369,22 @@
 #product5 {
     padding-top: 10px;
     padding-bottom: 20px;
+    background-color: #EF4D89;
 }
 
 #product5 h2 {
-    background-color: #EF4D89;
-    color: black;
+    color: white;
 }
 
 #zima-bottle-pink {
     width: 100%;
 }
 
-#pink-button {
+.pink-button {
     background-color: #EF4D89;
 }
 
-#pink-button:hover {
+.pink-button:hover {
     color: #EF4D89;
     background-color: white;
     border: #EF4D89 solid 2px;
@@ -370,6 +415,36 @@
     font-size: 14px;
     padding-bottom: 10px;
 }
+
+#hero-bottles-btm {
+    display: block;
+    margin: 0 auto;
+}
+
+#img-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+#bottles-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Jura;
+}
+
+#bottles-overlay a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
 
 #questions h2 {
     border-bottom: solid black 2px;
@@ -458,8 +533,9 @@
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    font-family: Sora;
+    font-family: Jura;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
 #contact-form button:hover {
