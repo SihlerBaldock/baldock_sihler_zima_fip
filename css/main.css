@@ -1,5 +1,13 @@
 /* Basic Styles */
 
+.h2-fullwidth {
+    text-align: center;
+    font-family: Jura;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-size: 18px;
+}
 
 /* Header Styles */
 
@@ -115,18 +123,28 @@
 
 /* Hero Section Styles */
 
-#zima-scene-red {
+#zima-product-display {
     max-width: 1200px;
     display: block;
     margin: 0 auto;
 }
 
+#btm-img-home {
+    text-align: center;
+    font-family: Jura;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+}
+
 .card {
-    width: 200px;
-    height: 250px;
+    width: 176px;
+    height: 341px;
     margin: 1rem auto;
     perspective: 1000px;
     cursor: pointer;
+    text-align: center;
 }
 
 .card-inner {
@@ -149,65 +167,62 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.5rem;
+    border-radius: 15px;
 }
 
 .card-front {
-    background-color: white;
+    font-family: Sora;
+    color: white;
 }
 
-#card-front-orange {
-    border: 2px solid #FB8400;
+#card-front-bottle {
+    border: 2px solid black;
+    background-color: #FB8400;
 }
 
 .card-back {
     color: white;
     transform: rotateY(180deg);
-    font-family: Jura;
 }
 
-#card-back-orange {
-    background-color: #FB8400;
+#card-back-bottle {
+    background-image: url("../images/zima-bottle-orange176.png");
 }
 
-#card-front-lemon {
-    border: 2px solid #F9ED24;
-}
-
-#card-back-lemon {
+#card-front-smallcan {
+    border: 2px solid black;
     background-color: #F9ED24;
 }
 
-#card-front-lime {
-    border: 2px solid #3AD730;
+#card-back-smallcan {
+    background-image: url("../images/zima-can-small-yellow176.png");
 }
 
-#card-back-lime {
+#card-front-skinnycan {
+    border: 2px solid black;
     background-color: #3AD730;
 }
 
-#card-front-grapefruit {
-    border: 2px solid #DC3926;
+#card-back-skinnycan {
+    background-image: url("../images/zima-can-skinny-green176.png");
 }
 
-#card-back-grapefruit {
+#card-front-kingcan {
+    border: 2px solid black;
     background-color: #DC3926;
 }
 
-#card-front-dragonfruit {
-    border: 2px solid #EF4D89;
+#card-back-kingcan {
+    background-image: url("../images/zima-can-king-red176.png");
 }
 
-#card-back-dragonfruit {
-    background-color: #EF4D89;
-}
 
 /* Video Section Styles */
 
 #home-video {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 40vh;
     overflow: hidden;
 }
 
@@ -215,24 +230,24 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding-top: 80px;
 }
 
 .video-overlay {
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
-    z-index: 2;
+    background-color: black;
     font-family: Jura;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
-.video-ovelay img {
-    max-width: 200px;
-    margin-top: 20px;
-    padding-top: 20px;
+.video-overlay a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Products Page Styles */ 
@@ -243,23 +258,25 @@
     margin: 0 auto;
 }
 
-#product-display h2 {
+.product h2 {
+    font-family: Sora;
+    font-size: 24px;
     text-align: center;
-    font-family: Jura;
-    color: white;
-    background-color: black;
-    padding: 20px;
-    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #product1 {
     padding-top: 10px;
     padding-bottom: 20px;
-    background-color: #FB8400;
+    background: #FB8400;
+    background: linear-gradient(135deg,rgba(251, 132, 0, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(251, 132, 0, 1) 60%);
 }
 
 #product1 h2 {
-    color: white;
+   color: white;
 }
 
 .zima-img {
@@ -294,10 +311,19 @@
     cursor: pointer;
 }
 
+.color-transition {
+    height: 40px;
+}
+
+.orange-to-yellow {
+    background: linear-gradient(to bottom, #FB8400, #F9ED24);
+}
+
 #product2 {
     padding-top: 10px;
     padding-bottom: 20px;
-    background-color: #F9ED24;
+    background: #F9ED24;
+    background: linear-gradient(225deg, rgba(249, 237, 36, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(249, 237, 36, 1) 60%);
 }
 
 #product2 h2 {
@@ -318,10 +344,15 @@
     cursor: pointer;
 }
 
+.yellow-to-green {
+    background: linear-gradient(to bottom, #F9ED24, #3AD730);
+}
+
 #product3 {
     padding-top: 10px;
     padding-bottom: 20px;
-    background-color: #3AD730;
+    background: #3AD730;
+    background: linear-gradient(135deg, rgba(58, 215, 48, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(58, 215, 48, 1) 60%);
 }
 
 #product3 h2 {
@@ -342,10 +373,15 @@
     cursor: pointer;
 }
 
+.green-to-red {
+    background: linear-gradient(to bottom, #3AD730, #DC3926);
+}
+
 #product4 {
     padding-top: 10px;
     padding-bottom: 20px;
-    background-color: #DC3926;
+    background: #DC3926;
+    background: linear-gradient(225deg, rgba(220, 57, 38, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(220, 57, 38, 1) 60%);
 }
 
 #product4 h2 {
@@ -366,10 +402,15 @@
     cursor: pointer;
 }
 
+.red-to-pink {
+    background: linear-gradient(to bottom, #DC3926, #EF4D89);
+}
+
 #product5 {
     padding-top: 10px;
     padding-bottom: 20px;
-    background-color: #EF4D89;
+    background: #EF4D89;
+    background: linear-gradient(135deg, rgba(239, 77, 137, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(239, 77, 137, 1) 60%);
 }
 
 #product5 h2 {
@@ -413,7 +454,8 @@
 #were-back p {
     font-family: Sora;
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #hero-bottles-btm {
@@ -440,11 +482,10 @@
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     font-size: 18px;
+    border-radius: 15px;
 }
-
-
 
 #questions h2 {
     border-bottom: solid black 2px;
@@ -458,7 +499,8 @@
 #questions p {
     font-family: Sora;
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #btn-wereback {
@@ -629,7 +671,5 @@
 /* Desktop Media Queries */
 
 @media screen and (min-width: 1200px) {
-    
-    
 
 }
