@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.63 174.63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 7.75px;
+      }
+    </style>
+  </defs>
+  <g id="Stopwatch">
+    <g>
+      <circle class="cls-2" cx="87.32" cy="87.32" r="83.44"/>
+      <polyline class="cls-1" points="139.8 124.65 64.9 49.67 34.61 49.67 109.59 124.73 109.94 124.79 140.17 124.79"/>
+      <polyline class="cls-3" points="118.35 109.62 73.87 65.1 55.89 65.1 100.41 109.67 100.62 109.71 118.57 109.71"/>
+      <line class="cls-1" x1="92.02" y1="76.81" x2="119.3" y2="49.53"/>
+      <line class="cls-1" x1="96.75" y1="81.55" x2="128.46" y2="49.83"/>
+      <line class="cls-1" x1="118.91" y1="49.67" x2="128.79" y2="49.67"/>
+      <line class="cls-1" x1="76.86" y1="91.97" x2="44.01" y2="124.82"/>
+      <line class="cls-1" x1="81.59" y1="96.7" x2="53.19" y2="125.11"/>
+      <line class="cls-1" x1="43.71" y1="124.96" x2="53.53" y2="124.96"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.11 174.11">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 8.24px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 8.46px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Stopwatch">
+    <g>
+      <rect class="cls-2" x="4.23" y="4.23" width="165.65" height="165.65" rx="38.08" ry="38.08"/>
+      <circle class="cls-1" cx="87.05" cy="87.05" r="39.37"/>
+      <circle class="cls-3" cx="136.13" cy="37.98" r="9.71"/>
+    </g>
+  </g>
+</svg>

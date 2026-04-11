@@ -24,6 +24,23 @@
     padding: 10px; 
 }
 
+#insta-header {
+    display: none;
+}
+
+#twitter-header {
+    display: none;
+}
+
+#tiktok-header {
+    display: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
 /* Hambuger Menu Styles */
 
 .visuallyHidden {
@@ -622,6 +639,11 @@
 
     #header {
         justify-content: flex-start;
+    }
+
+    #insta-header, #twitter-header, #tiktok-header {
+        display: block;
+        height: 40px;
     }
 
     .hamburger {
