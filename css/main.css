@@ -6,7 +6,7 @@
     color: white;
     background-color: black;
     padding: 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* Header Styles */
@@ -37,8 +37,7 @@
 }
 
 .social-icons {
-    display: flex;
-    gap: 15px;
+    display: none;
 }
 
 /* Hambuger Menu Styles */
@@ -144,15 +143,6 @@
     max-width: 1200px;
     display: block;
     margin: 0 auto;
-}
-
-#btm-img-home {
-    text-align: center;
-    font-family: Jura;
-    color: white;
-    background-color: black;
-    padding: 20px;
-    font-size: 20px;
 }
 
 .card {
@@ -272,7 +262,7 @@
 
 /* Products Page Styles */ 
 
-#hero-home {
+#hero-home img {
     max-width: 1200px;
     display: block;
     margin: 0 auto;
@@ -280,12 +270,16 @@
 
 .product h2 {
     font-family: Sora;
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px black, 0 0 20px black, 0 0 50px black;
 }
 
 #product1 {
@@ -295,7 +289,7 @@
 }
 
 #product1 h2 {
-   color: white;
+    text-shadow: 0 0 5px #FB8400, 0 0 10px #FB8400, 0 0 20px #FB8400;
 }
 
 .zima-img {
@@ -304,6 +298,10 @@
     height: auto;
     margin: 0 auto;
     display: block;
+}
+
+#zima-can-small-orange {
+    margin-top: 60px;
 }
 
 .products-buttons {
@@ -358,6 +356,15 @@
 
 #product2 h2 {
     color: white;
+    text-shadow: 0 0 5px #F9ED24, 0 0 10px #F9ED24, 0 0 20px #F9ED24;
+}
+
+#zima-can-small-yellow {
+    margin-top: 60px;
+}
+
+#zima-can-king-yellow {
+    padding-top: 20px;
 }
 
 .yellow-to-green {
@@ -372,6 +379,11 @@
 
 #product3 h2 {
     color: white;
+    text-shadow: 0 0 5px #3AD730, 0 0 10px #3AD730, 0 0 20px #3AD730;
+}
+
+#zima-can-small-green {
+    margin-top: 60px;
 }
 
 .green-to-red {
@@ -386,6 +398,15 @@
 
 #product4 h2 {
     color: white;
+    text-shadow: 0 0 5px #DC3926, 0 0 10px #DC3926, 0 0 20px #DC3926;
+}
+
+#zima-can-small-red {
+    margin-top: 70px;
+}
+
+#zima-can-king-red {
+    padding-top: 15px;
 }
 
 .red-to-pink {
@@ -400,10 +421,19 @@
 
 #product5 h2 {
     color: white;
+    text-shadow: 0 0 5px #EF4D89, 0 0 10px #EF4D89, 0 0 20px #EF4D89;
 }
 
 #zima-bottle-pink {
     width: 100%;
+}
+
+#zima-can-small-pink {
+    margin-top: 70px;
+}
+
+#zima-can-king-pink {
+    padding-top: 20px;
 }
 
 /* About Us Page Styles */
@@ -527,10 +557,14 @@
 #footer-main {
     background-color: black;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 #logo-footer {
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 20px;
     height: 110px;
 }
@@ -546,6 +580,22 @@
     color: white;
 }
 
+.footer-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#social-icons-footer {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+#insta-footer, #twitter-footer, #tiktok-footer {
+    height: 50px;
+}
+
 /* Custom Media Queries */
 
 @media screen and (min-width: px) {
@@ -557,12 +607,12 @@
 @media screen and (min-width: 768px) {
 
     #header {
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
-    #insta-header, #twitter-header, #tiktok-header {
-        display: block;
-        height: 40px;
+    #logo-header {
+        height: 100px;
     }
 
     .hamburger {
@@ -572,12 +622,14 @@
     .nav-links {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 40px;
         position: static;
         opacity: 1;
         visibility: visible;
         transform: none;
         background: none;
+        padding-bottom: 25px;
+        padding-right: 550px;
     }
 
     .nav-links a {
@@ -585,26 +637,24 @@
     }
 
     #nav-header {
-        margin-left: 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
     }
 
     #logo-footer {
-        height: 130px;
-    }
-
-    #footer-main {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        height: 110px;
     }
 
     #nav-footer ul {
         display: flex;
-        gap: 30px;
+        flex-direction: column;
+        gap: 10px;
+        list-style-type: none;
     }
 
-    #product-display h2 {
-        font-size: 24px;
+    .footer-right {
+        height: 150px;
     }
 
 }
@@ -612,5 +662,74 @@
 /* Desktop Media Queries */
 
 @media screen and (min-width: 1200px) {
+
+    #header {
+        justify-content: space-evenly;
+    }
+
+     .social-icons {
+        display: flex;
+        gap: 30px;
+    }
+
+     #insta-header, #twitter-header, #tiktok-header {
+        display: block;
+        height: 50px;
+    }
+
+     #footer-main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-footer ul {
+        flex-direction: row;
+        gap: 30px;
+        padding-left: 120px;
+    }
+
+    #zima-can-king-orange {
+        grid-row: 1 / -1;
+    }
+
+    #zima-can-skinny-orange {
+        grid-row: 1 / -1;
+    }
+
+    #zima-can-king-yellow {
+        grid-row: 1 / -1;
+    }
+
+    #zima-can-skinny-yellow {
+        grid-row: 1 / -1;
+    }
+
+    #zima-can-king-green {
+        grid-row: 1 / -1;
+    }
+
+     #zima-can-skinny-green {
+        grid-row: 1 / -1;
+    }
+
+    #zima-can-king-red {
+        grid-row: 1 / -1;
+    }
+
+    #zima-can-skinny-red {
+        grid-row: 1 / -1;
+    }
+
+    #zima-can-king-pink {
+        grid-row: 1 / -1;
+    }
+
+    #zima-can-skinny-pink {
+        grid-row: 1 / -1;
+    }
+    
+
 
 }
