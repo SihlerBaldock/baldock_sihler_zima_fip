@@ -40,12 +40,11 @@ const contactForm = document.querySelector("#contact-form");
 //Functions 
 
 function showInfo (e) {
-
     const element = e.currentTarget;
 
-    const existing = element.querySelector("p");
+    const existing = element.nextElementSibling;
     
-    if (existing) {
+    if (existing && existing.classList.contains("info-text")) {
         existing.remove();
         return;
     }
@@ -58,7 +57,7 @@ function showInfo (e) {
     
     info.textContent = productData[product][type];
 
-    element.appendChild(info); 
+    element.insertAdjacentElement("afterend", info); 
 }
 
 function toggleForm(e) {

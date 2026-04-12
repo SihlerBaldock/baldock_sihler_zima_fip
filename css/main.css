@@ -251,20 +251,23 @@
 
 .video-overlay {
     position: absolute;
-    top: 46%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: black;
-    font-family: Jura;
-    padding: 10px 20px 10px 20px;
-    font-size: 18px;
-    border-radius: 10px;
 }
+
 
 .video-overlay a {
     text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+.video-overlay a:hover {
     color: white;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
 }
 
 /* Products Page Styles */ 
@@ -289,7 +292,6 @@
     padding-top: 10px;
     padding-bottom: 20px;
     background: #FB8400;
-    background: linear-gradient(135deg,rgba(251, 132, 0, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(251, 132, 0, 1) 60%);
 }
 
 #product1 h2 {
@@ -306,30 +308,42 @@
 
 .products-buttons {
     margin-top: 10px;
-    padding: 10px;
     font-family: Jura;
-    color: white;
-    border: solid white 2px;
-    border-radius: 10px;
+    color: black;
     font-size: 16px;
-}
-
-.orange-button {
-    background-color: #FB8400;
-}
-
-.orange-button:hover {
-    color: #FB8400;
-    background-color: white;
-    border: #FB8400 solid 2px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: .5s ease-in;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-shadow: none;
+    background: white;
     cursor: pointer;
+    box-shadow: transparent;
+    border: 2px solid black;
+    transition: 0.5s ease;
+}
+
+.products-buttons:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+    box-shadow: 0 0 5px black, 0 0 20px black, 0 0 50px black, 0 0 100px black;
+}
+
+.info-text {
+    grid-column: 1 / -1;
+    margin: 20px;
+    font-family: Sora;
+    font-size: 14px;
+    color: white;
+    text-align: center;
 }
 
 .color-transition {
     height: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
 }
 
 .orange-to-yellow {
@@ -340,25 +354,10 @@
     padding-top: 10px;
     padding-bottom: 20px;
     background: #F9ED24;
-    background: linear-gradient(225deg, rgba(249, 237, 36, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(249, 237, 36, 1) 60%);
 }
 
 #product2 h2 {
     color: white;
-}
-
-.yellow-button {
-    background-color: #F9ED24;
-}
-
-.yellow-button:hover {
-    color: #F9ED24;
-    background-color: white;
-    border: #F9ED24 solid 2px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: .5s ease-in;
-    cursor: pointer;
 }
 
 .yellow-to-green {
@@ -369,25 +368,10 @@
     padding-top: 10px;
     padding-bottom: 20px;
     background: #3AD730;
-    background: linear-gradient(135deg, rgba(58, 215, 48, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(58, 215, 48, 1) 60%);
 }
 
 #product3 h2 {
     color: white;
-}
-
-.green-button {
-    background-color: #3AD730;
-}
-
-.green-button:hover {
-    color: #3AD730;
-    background-color: white;
-    border: #3AD730 solid 2px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: .5s ease-in;
-    cursor: pointer;
 }
 
 .green-to-red {
@@ -398,25 +382,10 @@
     padding-top: 10px;
     padding-bottom: 20px;
     background: #DC3926;
-    background: linear-gradient(225deg, rgba(220, 57, 38, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(220, 57, 38, 1) 60%);
 }
 
 #product4 h2 {
     color: white;
-}
-
-.red-button {
-    background-color: #DC3926;
-}
-
-.red-button:hover {
-    color: #DC3926;
-    background-color: white;
-    border: #DC3926 solid 2px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: .5s ease-in;
-    cursor: pointer;
 }
 
 .red-to-pink {
@@ -427,7 +396,6 @@
     padding-top: 10px;
     padding-bottom: 20px;
     background: #EF4D89;
-    background: linear-gradient(135deg, rgba(239, 77, 137, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(239, 77, 137, 1) 60%);
 }
 
 #product5 h2 {
@@ -436,20 +404,6 @@
 
 #zima-bottle-pink {
     width: 100%;
-}
-
-.pink-button {
-    background-color: #EF4D89;
-}
-
-.pink-button:hover {
-    color: #EF4D89;
-    background-color: white;
-    border: #EF4D89 solid 2px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: .5s ease-in;
-    cursor: pointer;
 }
 
 /* About Us Page Styles */
@@ -490,19 +444,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-family: Jura;
 }
 
 #bottles-overlay a {
     text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 10px 20px 10px 20px;
-    font-size: 18px;
-    border-radius: 15px;
 }
+
 
 #questions h2 {
     border-bottom: solid black 2px;
@@ -542,24 +489,9 @@
 }
 
 #btn-contact {
-    font-family: Jura;
-    font-size: 18px;
-    background-color:black;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
-    margin-top: 10px;
+    text-decoration: none;
     margin-bottom: 20px;
     text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-#btn-contact:hover {
-    border: solid black 2px;
-    background-color: white;
-    color: black;
 }
 
 .hidden-form {
@@ -586,22 +518,9 @@
 }
 
 #contact-form button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: Jura;
     margin-bottom: 20px;
-    font-size: 18px;
 }
 
-#contact-form button:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-}
 
 /* Footer Styles */
 
