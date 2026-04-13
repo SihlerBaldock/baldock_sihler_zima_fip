@@ -328,6 +328,11 @@
     box-shadow: 0 0 5px black, 0 0 20px black, 0 0 50px black, 0 0 100px black;
 }
 
+.cart {
+    grid-row: 2;
+    margin-bottom: 40px;
+}
+
 .info-text {
     grid-column: 1 / -1;
     margin: 20px;
@@ -342,6 +347,11 @@
     max-width: 1200px;
     margin: 0 auto;
     display: block;
+}
+
+.orange-button:hover {
+    text-shadow: 0 0 5px #FB8400, 0 0 10px #FB8400, 0 0 20px #FB8400;
+    color: #FB8400;
 }
 
 .orange-to-yellow {
@@ -367,6 +377,11 @@
     padding-top: 20px;
 }
 
+.yellow-button:hover {
+    text-shadow: 0 0 5px #F9ED24, 0 0 10px #F9ED24, 0 0 20px #F9ED24;
+    color: #F9ED24;
+}
+
 .yellow-to-green {
     background: linear-gradient(to bottom, #F9ED24, #3AD730);
 }
@@ -384,6 +399,11 @@
 
 #zima-can-small-green {
     margin-top: 60px;
+}
+
+.green-button:hover {
+    text-shadow: 0 0 5px #3AD730, 0 0 10px #3AD730, 0 0 20px #3AD730;
+    color: #3AD730;
 }
 
 .green-to-red {
@@ -407,6 +427,11 @@
 
 #zima-can-king-red {
     padding-top: 15px;
+}
+
+.red-button:hover {
+    text-shadow: 0 0 5px #DC3926, 0 0 10px #DC3926, 0 0 20px #DC3926;
+    color: #DC3926;
 }
 
 .red-to-pink {
@@ -434,6 +459,11 @@
 
 #zima-can-king-pink {
     padding-top: 20px;
+}
+ 
+.pink-button:hover {
+    text-shadow: 0 0 5px #EF4D89, 0 0 10px #EF4D89, 0 0 20px #EF4D89;
+    color: #EF4D89;
 }
 
 /* About Us Page Styles */
