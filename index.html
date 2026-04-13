@@ -11,18 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head> 
 <body>
+    <h1 class="visually-hidden">ZIMA Home Page</h1>
     <header id="header">
         <img src="images/zima-logo-white.svg" id="logo-header" alt="ZIMA Logo White">
 
         <nav id="nav-header">
             <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden">
             <label for="checkbox2">
-                <div class="hamburger">
+                <span class="hamburger">
                     <span class="bar bar1"></span>
                     <span class="bar bar2"></span>
                     <span class="bar bar3"></span>
                     <span class="bar bar4"></span>
-                </div>
+                </span>
             </label>
 
             <ul class="nav-links">
@@ -43,7 +44,7 @@
     <section id="hero-home" class="full-width-grid-con">
         <h2 class="visually-hidden">ZIMA Hero Section</h2>
        <img
-            sizes="(max-width: 1200px) 100vw 1200px"
+            sizes="(max-width: 1200px) 100vw, 1200px"
             srcset="
             images/zima-bottle-scene412.png 412w,
             images/zima-bottle-scene768.png 768w"
@@ -56,6 +57,7 @@
     <h2 class="h2-fullwidth">ZIMA's New Direction...</h2>
 
     <section id="card-display" class="grid-con center-grid-con">
+        <h2 class="visually-hidden">ZIMA Card Display</h2>
 
     <div class="card col-span-2 m-col-start-1 m-col-end-4">
         <div class="card-inner">
@@ -97,6 +99,7 @@
     <h2 class="h2-fullwidth">Click below to learn more about ZIMA's new products!</h2>
 
     <section id="home-video" class="full-width-grid-con">
+        <h2 class="visually-hidden">ZIMA Can Video</h2>
         <video autoplay muted loop playsinline class="col-span-full">
             <source src="videos/zima-video1280.mp4" type="video/mp4">
         </video>
