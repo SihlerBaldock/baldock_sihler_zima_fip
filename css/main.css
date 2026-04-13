@@ -260,12 +260,60 @@
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
 }
 
+/* Socials Section Styles */
+
+#flavours-home {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#flavours-home h2 {
+    font-family: Jura;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+#flavour-icons {
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.icon-track {
+    display: flex;
+    width: max-content;
+    animation: IconScroll 15s linear infinite;
+}
+
+.icon-track img {
+    width: 80px;
+    margin: 0 30px;
+}
+
+@keyframes IconScroll {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
 /* Products Page Styles */ 
 
 #hero-home img {
     max-width: 1200px;
     display: block;
     margin: 0 auto;
+}
+
+.product {
+    position: relative;
 }
 
 .product h2 {
@@ -286,10 +334,39 @@
     padding-top: 10px;
     padding-bottom: 20px;
     background: #FB8400;
+    position: relative;
 }
 
 #product1 h2 {
     text-shadow: 0 0 5px #FB8400, 0 0 10px #FB8400, 0 0 20px #FB8400;
+}
+
+#product1 .cart {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    margin: 0;
+}
+
+.product-item {
+    position: relative;
+    display: inline-block;
+}
+
+.product-item, .zima-img {
+    display: block;
+    width: 100%;
+}
+
+.cart {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 8px 16px;
+
 }
 
 .zima-img {
@@ -301,7 +378,7 @@
 }
 
 #zima-can-small-orange {
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .products-buttons {
@@ -718,6 +795,10 @@
         flex-direction: row;
         gap: 30px;
         padding-left: 120px;
+    }
+
+    #nav-footer ul li a {
+        font-size: 24px;
     }
 
     #zima-can-king-orange {
