@@ -44,13 +44,13 @@
 
 .visuallyHidden {
     position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
+    overflow: hidden;  
     height: 1px; width: 1px; 
     margin: -1px; padding: 0; border: 0; 
 }
 
 .hamburger {
+    display: block;
     margin: 0 auto;
     margin-top: 30px;
     width: 30px;
@@ -392,7 +392,6 @@
     text-shadow: none;
     background: white;
     cursor: pointer;
-    box-shadow: transparent;
     border: 2px solid black;
     transition: 0.5s ease;
 }
@@ -701,12 +700,6 @@
 
 #insta-footer, #twitter-footer, #tiktok-footer {
     height: 50px;
-}
-
-/* Custom Media Queries */
-
-@media screen and (min-width: px) {
-
 }
 
 /* Tablet Media Queries */

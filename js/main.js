@@ -4,7 +4,7 @@ console.log("JS File is Connected");
 
 const productData = {
     orange: {
-        ingredients: "Carbonated Water, Natural Orange Flavour, Citric Acid, Cane Sugar, Orange Juice Conentrate, Ascorbic Acid (Vitamin C), Natural Colour, Sodium Citrate",
+        ingredients: "Carbonated Water, Natural Orange Flavour, Citric Acid, Cane Sugar, Orange Juice Concentrate, Ascorbic Acid (Vitamin C), Natural Colour, Sodium Citrate",
         sizes: "Glass Bottle (355ml), Small Can (355ml), King Can (473ml), Skinny Can (355ml)",
         info: "Bright, bubbly, and bursting with citrus flavor, ZIMA's Original Orange Soda delivers a refreshingly smooth twist on a classic favorite. Each sip blends vibrant orange zest with crisp carbonation for a perfectly balanced sweetness that’s bold without being overpowering. Whether you’re cooling off on a sunny day or adding a splash of fun to any gathering, ZIMA's Original Orange brings a lively pop of flavor that’s impossible to resist."
     },
